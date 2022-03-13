@@ -16,7 +16,6 @@
     "embla-carousel-react": "^6.2.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
-    "imagemin-svgo": "^10.0.1",
     "next": "12.1.0",
     "next-optimized-images": "^2.6.2",
     "next-progress": "^1.0.8",
