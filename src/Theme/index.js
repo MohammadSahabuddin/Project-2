@@ -13,12 +13,11 @@ const theme = createTheme({
     },
     primary: {
       main: '#08E8B3', //Others Main Color
-      mainGradient: 'linear-gradient(to right,#41739b,#01FFC3)', //Gradient Color
-      youtube: '#FF0000', //Youtube logo color
-      black_opacity: '#e8e8e8', //Table Color
-      link_color: '#653096', //Link Color
-      borderColor: '#0000002e', //Border Color
-      success: '#28A745', //Success Color Message
+      heroLight: '#FED332', //Yellow Color
+      heroDark: '#0066FF', //navy blue color
+      project: '#0066FF', //light blue Color
+      codef: '#7027E1', //purple Color
+      brand: '#FF0437', //red Color
     },
   },
   // breakpoints: {

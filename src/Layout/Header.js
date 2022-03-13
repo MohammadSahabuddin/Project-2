@@ -12,16 +12,16 @@ const Header = ({ activePage }) => {
       maxWidth={false}
       disableGutters
       component="header"
-      sx={{ px: '3%' }}
+      sx={{ p: '10px 3%' }}
     >
       <Grid container columnSpacing={2} sx={{ alignItems: 'center' }}>
-        <Grid item md={2}>
+        <Grid item md={2} sx={{ textAlign: 'left' }}>
           <Logo />
         </Grid>
-        <Grid item md={9}>
+        <Grid item md={9} sx={{ textAlign: 'right' }}>
           <Nav />
         </Grid>
-        <Grid item md={1}>
+        <Grid item md={1} sx={{ textAlign: 'right' }} className="FAizanArif">
           <SideMenu />
         </Grid>
       </Grid>

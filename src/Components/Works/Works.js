@@ -3,20 +3,28 @@ import {
   Box,
   Container,
   Grid,
-  IconButton,
-  ImageList,
   ImageListItem,
   ImageListItemBar,
-  ListSubheader,
   Typography,
 } from '@mui/material';
 
 //Data
 import Work from 'Data/Works/Works.data';
 
+//styles
+import styles from 'Styles/Works/Works';
+
+//Component
+import WorkSvg from 'Components/Backgrounds/Work.svg';
+
 export default function Works() {
   return (
-    <Container maxWidth={false} disableGutters component="section">
+    <Container
+      maxWidth={false}
+      disableGutters
+      component="section"
+      sx={{ mt: '16%' }}
+    >
       <Grid container spacing={false} gap={false}>
         {Work.map((item) => (
           <Grid
@@ -46,12 +54,16 @@ export default function Works() {
                     {item.author}
                   </Typography>
                 }
-                sx={{ height: '100%', textAlign: 'center' }}
+                sx={styles.HoverEffect}
+                className="HoverEffect"
               />
             </ImageListItem>
           </Grid>
         ))}
       </Grid>
+      <Box>
+        <WorkSvg />
+      </Box>
     </Container>
   );
 }
