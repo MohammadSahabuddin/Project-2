@@ -1,17 +1,17 @@
 //Packages
 import { Box, Typography } from '@mui/material';
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { PrevButton, NextButton } from './EmblaCarouselButtons';
+import { PrevButton, NextButton } from './TestamonialButton';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 //Data
-import CarouselData from 'Data/Carousel/Carousel.data';
+import CarouselData from 'Data/Testamonial/Testamonial.data';
 
 //Styles
-import styles from 'Styles/Carousel/Carousel.style';
+import styles from 'Styles/Testamonial/TestamonialCarousel.style';
 
-const EmblaCarousel = ({ slides, options = { loop: true } }) => {
+const ClientCarousel = ({ slides, options = { loop: true } }) => {
   //ADD for Autoplay
   const autoplay = useRef(
     Autoplay(
@@ -82,4 +82,4 @@ const EmblaCarousel = ({ slides, options = { loop: true } }) => {
   );
 };
 
-export default EmblaCarousel;
+export default ClientCarousel;

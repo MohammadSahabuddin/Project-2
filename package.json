@@ -13,6 +13,8 @@
     "@emotion/styled": "^11.8.1",
     "@fontsource/poppins": "^4.5.2",
     "@mui/material": "^5.5.0",
+    "aos": "^2.3.4",
+    "embla-carousel-autoplay": "^6.2.0",
     "embla-carousel-react": "^6.2.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",

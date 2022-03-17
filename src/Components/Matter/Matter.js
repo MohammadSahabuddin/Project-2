@@ -1,37 +1,40 @@
 //Packages
-import { Box, ButtonBase, Container, Typography } from '@mui/material';
+import { Box, ButtonBase, Container, Grid, Typography } from '@mui/material';
 import Link from 'next/link';
 
 //image
 import image from 'Assets/h1-img-7.jpg';
 
+//Component
+import MatterLeft from './MatterLeft';
+
+//styles
+import styles from 'Styles/Matter/Matter.style';
+
 const Matter = () => {
   return (
-    <Container>
-      <Box>
-        <Box component="img" src={image} alt="Logo" width="100%" />
-      </Box>
-      <Box>
-        <Typography variant="h4" component="h4">
-          Unique packaging matters
-        </Typography>
-        <Box></Box>
-        <Typography variant="body1" component="p">
-          Lorem ipsum dolor sit amat, consenter adipisicing elite, sed do
-          elusion tempore incident ut laborer
-        </Typography>
-        <Box>
-          <Link href="/">
-            <a>
-              <ButtonBase>
-                <Typography variant="body1" component="p">
-                  Read more
-                </Typography>
-              </ButtonBase>
-            </a>
-          </Link>
-        </Box>
-      </Box>
+    <Container
+      maxWidth={false}
+      disableGutters
+      component="section"
+      sx={styles.Brands}
+    >
+      <Grid
+        container
+        columnSpacing={2}
+        sx={{ justifyContent: 'center', position: 'relative' }}
+      >
+        <Grid item md={4}>
+          <Box sx={styles.Texts}>
+            <MatterLeft />
+          </Box>
+        </Grid>
+        <Grid item md={8}>
+          <Box sx={styles.Image}>
+            <Box component="img" src={image} alt="Logo" width="100%" />
+          </Box>
+        </Grid>
+      </Grid>
     </Container>
   );
 };

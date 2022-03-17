@@ -7,15 +7,17 @@ import {
   ImageListItemBar,
   Typography,
 } from '@mui/material';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 //Data
 import Work from 'Data/Works/Works.data';
 
 //styles
-import styles from 'Styles/Works/Works';
+import styles from 'Styles/Works/Works.style';
 
 //Component
-import WorkSvg from 'Components/Backgrounds/Work.svg';
+// import WorkSvg from 'Components/Backgrounds/Work.svg';
 
 export default function Works() {
   return (
@@ -25,23 +27,26 @@ export default function Works() {
       component="section"
       sx={{ mt: '16%' }}
     >
-      <Grid container spacing={false} gap={false}>
+      <Grid container spacing={0}>
         {Work.map((item) => (
-          <Grid
-            item
-            md={4}
-            key={item.img}
-            sx={{ position: 'relative', li: { height: '100%' } }}
-            className="FaizanItem"
-          >
-            <ImageListItem className="ImageListItem">
+          <Grid item md={4} key={item.img} className="FaizanItem">
+            <ImageListItem
+              className="BDImageListItem"
+              sx={{
+                position: 'relative',
+                img: {
+                  height: '100%',
+                  width: '100%',
+                },
+              }}
+            >
               <Box
                 component="img"
                 src={`${item.img}?w=248&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 alt={item.title}
                 loading="lazy"
-                width="100%"
+                sx={{ height: '100%', width: '100%' }}
+                className="SiamBD"
               />
               <ImageListItemBar
                 title={
@@ -61,9 +66,6 @@ export default function Works() {
           </Grid>
         ))}
       </Grid>
-      <Box>
-        <WorkSvg />
-      </Box>
     </Container>
   );
 }

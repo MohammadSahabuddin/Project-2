@@ -20,6 +20,8 @@ import Works from 'Components/Works/Works';
 import Codef from 'Components/Codef/Codef';
 import Brand from 'Components/Brand/Brand';
 import Matter from 'Components/Matter/Matter';
+import Testamonial from 'Components/Testamonial/Testamonial';
+import Client from 'Components/Client/Client';
 
 export default function Home() {
   return (
@@ -31,6 +33,8 @@ export default function Home() {
         <Codef />
         <Brand />
         <Matter />
+        <Testamonial />
+        <Client />
       </Container>
     </Layout>
   );

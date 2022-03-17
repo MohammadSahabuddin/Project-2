@@ -18,6 +18,8 @@ const theme = createTheme({
       project: '#0066FF', //light blue Color
       codef: '#7027E1', //purple Color
       brand: '#FF0437', //red Color
+      footer: '#a3a3a3', //light color
+      copyright: '#808285', //ash color
     },
   },
   // breakpoints: {

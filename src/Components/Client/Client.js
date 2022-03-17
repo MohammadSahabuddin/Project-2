@@ -1,9 +1,9 @@
-import Carousel from './Carousel';
+import ClientCarousel from './ClientCarousel';
 
 const Client = () => {
   return (
     <div className="Carousel">
-      <Carousel />
+      <ClientCarousel />
     </div>
   );
 };
