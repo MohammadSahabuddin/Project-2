@@ -5,7 +5,7 @@ export default {
   Texts: {
     height: '76%',
     width: '45%',
-    background: 'wheat',
+    bgcolor: 'background.default',
     padding: '60px',
     zIndex: 9999,
     position: 'absolute',

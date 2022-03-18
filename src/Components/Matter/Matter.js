@@ -7,6 +7,7 @@ import image from 'Assets/h1-img-7.jpg';
 
 //Component
 import MatterLeft from './MatterLeft';
+import MatterSvg from 'Components/Backgrounds/Matter.svg';
 
 //styles
 import styles from 'Styles/Matter/Matter.style';
@@ -35,6 +36,9 @@ const Matter = () => {
           </Box>
         </Grid>
       </Grid>
+      <Box>
+        <MatterSvg />
+      </Box>
     </Container>
   );
 };

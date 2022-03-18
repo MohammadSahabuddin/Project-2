@@ -1,4 +1,8 @@
 export default {
+  Container: {
+    mt: '16%',
+    position: 'relative',
+  },
   HoverEffect: {
     height: '100%',
     textAlign: 'center',

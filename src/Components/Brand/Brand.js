@@ -9,15 +9,12 @@ import styles from 'Styles/Brand/Brand.style';
 
 //Component
 import BrandRight from './BrandRight';
+import BrandSvg from 'Components/Backgrounds/Brand.svg';
 
 const Brand = () => {
   return (
     <Box sx={styles.Brands}>
-      <Grid
-        container
-        columnSpacing={2}
-        sx={{ justifyContent: 'center', position: 'relative' }}
-      >
+      <Grid container columnSpacing={2} sx={styles.Grid}>
         <Grid item md={9.5}>
           <Box sx={styles.Image}>
             <Box component="img" src={image} alt="Logo" width="100%" />
@@ -29,6 +26,9 @@ const Brand = () => {
           </Box>
         </Grid>
       </Grid>
+      <Box>
+        <BrandSvg />
+      </Box>
     </Box>
   );
 };

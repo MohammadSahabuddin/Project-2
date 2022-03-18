@@ -59,16 +59,16 @@ const ClientCarousel = ({ slides, options = { loop: true } }) => {
           {CarouselData.map((carousel, i) => (
             <Box className="embla__slide" key={i} sx={styles.emblaSlide}>
               <Box className="embla__slide__inner">
-                <Typography variant="h1" component="h1">
-                  {'"'}
+                <Typography variant="h1" component="h1" sx={styles.H1}>
+                  {'”'}
                 </Typography>
-                <Typography variant="body1" component="p">
+                <Typography variant="body1" component="p" sx={styles.Details}>
                   {carousel.description}
                 </Typography>
-                <Typography variant="h4" component="h4">
+                <Typography variant="h4" component="h4" sx={styles.Title}>
                   {carousel.name}
                 </Typography>
-                <Typography variant="h6" component="h6">
+                <Typography variant="body1" component="p">
                   {carousel.post}
                 </Typography>
               </Box>

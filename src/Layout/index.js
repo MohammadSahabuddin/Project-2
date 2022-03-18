@@ -1,14 +1,15 @@
 //Layout
 import Header from './Header';
 import Footer from './Footer';
+import { Box } from '@mui/material';
 
 const index = ({ activePage, children }) => {
   return (
-    <div>
+    <Box sx={{ overflowX: 'hidden' }}>
       <Header activePage={activePage} />
       {children}
       <Footer />
-    </div>
+    </Box>
   );
 };
 

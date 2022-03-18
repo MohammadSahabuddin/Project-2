@@ -2,10 +2,14 @@ export default {
   Brands: {
     position: 'relative',
   },
+  Grid: {
+    justifyContent: 'center',
+    position: 'relative',
+  },
   Texts: {
     height: '60%',
     width: '41%',
-    background: 'wheat',
+    bgcolor: 'background.default',
     padding: '60px',
     zIndex: 9999,
     position: 'absolute',

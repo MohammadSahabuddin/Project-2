@@ -15,19 +15,14 @@ export default {
 
   emblaContainer: {
     display: 'flex',
-    userSelect: 'none',
-    WebkitTouchCallout: 'none',
-    KhtmlUserSelect: 'none',
     WebkitTapHighlightColor: 'transparent',
     marginLeft: '-10px',
-    // width: '25%',
   },
   emblaSlide: {
     position: 'relative',
-    minWidth: '100%',
     paddingLeft: '10px',
-    flex: '0 0 33.33%',
-    width: '33.33%',
+    // flex: '0 0 25%',
+    width: '50%',
   },
   emblaSlideInner: {
     position: 'relative',
@@ -46,21 +41,14 @@ export default {
     transform: 'translate(-50%, -50%)',
   },
   emblaButton: {
-    outline: '0',
     cursor: 'pointer',
-    backgroundColor: 'transparent',
-    touchAction: 'manipulation',
     position: 'absolute',
     zIndex: 1,
     top: '50%',
     transform: 'translateY(-50%)',
-    border: '0',
-    width: '30px',
-    height: '30px',
     justifyContent: 'center',
     alignItems: 'center',
     fill: '#1bcacd',
-    padding: '0',
     '&.embla__button--prev': {
       left: '27px',
     },
