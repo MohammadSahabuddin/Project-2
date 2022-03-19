@@ -51,7 +51,7 @@ export default function SideMenu() {
     >
       <List direction="row" className="Bangladesh">
         <ListItem>
-          <Link href="/">
+          <Link href="/" passHref>
             <a>
               <Box component="img" src={Logos} alt="Logo" />
             </a>
@@ -99,7 +99,8 @@ export default function SideMenu() {
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
             onOpen={toggleDrawer(anchor, true)}
-            swipeAreaWidth={50}
+            swipeAreaWidth={100}
+            className="FaizanArif"
           >
             {list(anchor)}
           </SwipeableDrawer>
